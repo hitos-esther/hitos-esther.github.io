@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- LINKS DE GOOGLE FOONTS PARA IMPORTAR ESTILOS DE LETRAS SERIF Y SANSERIF;
+            EN ESTE PROYECTO SE A DECIDIDO IMPORTAR CON @import LAS FUENTES EN CSS;
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;1,200&family=Rokkitt:wght@600&display=swap" rel="stylesheet">-->
+
+    <title>Salon Actual Unisex</title>
+    <script async defer crossorigin="anónimo" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v16.0"
+        nonce="U9CPlJI3"></script>
+    <link rel="stylesheet" href="/style/estilo.css">
+    <link rel="shortcut icon" href="./img/iconoImagen (2).ico">
+    <link rel="stylesheet" type="text/css" href="/style/base.css" />
+    <link rel="stylesheet" type="text/css" href="/pater/pater.css" />
+    <script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Vea esta demostración en un navegador moderno que admita variables CSS.");</script>
+</head>
+
+<body>
+
+    <!--BARRA DE NAVEGACION-->
+    <div class="topnav" id="myTopnav">
+        <a href="#videoBack" class="active">Home</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#my-section">Guia</a>
+        <a href="#footer">Contactos</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!--INSERCCION HERO SECTION CON VIDEO-->
+    
+   
+    <!--****************************************************************************************-->
+ 
+    <video id="videoBack" autoplay loop lang="es" controls>
+        <track src="./video/videoEsther.vtt" kind="subtitles" srclang="es" label="Spanish">  
+        <source src="./video/VideoSalonActualUnisex.mp4" type="video/mp4" />
+        <source src="./video/VideoSalonActualUnisex.ogv" type='video/ogv' />
+        <source src="./video/VideoSalonActualUnisex.webm" type='video/webm' />
+
+        
+    </video>
+    
+
+
+
+    <!-- DIV VACÍO PARA EL FILTRO TRANSPARENTE-->
+    <div class="absoluto"></div>
+    
+    <!--para cortar el comportamiento float left o float right y no se junte y descuadre el texto de la siguiente seccion,clear: both; deja de apilar cualquier cosa que tenga detras-->
+    <div class="limpiar"></div>
+
+    <!-- DIV PARA EL EFECTO PARALLAX-->
+    <div class="parallax"></div>
+
+    <section id="galeria">
+
+        <body class="demo-3 loading">
+            <svg class="hidden">
+                <symbol id="icon-arrow" viewBox="0 0 24 24">
+                    <title>arrow</title>
+                    <polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 " />
+                </symbol>
+                <symbol id="icon-drop" viewBox="0 0 24 24">
+                    <title>drop</title>
+                    <path
+                        d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z" />
+                    <path
+                        d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z" />
+                </symbol>
+                <symbol id="icon-github" viewBox="0 0 32.6 31.8">
+                    <title>github</title>
+                    <path
+                        d="M16.3,0C7.3,0,0,7.3,0,16.3c0,7.2,4.7,13.3,11.1,15.5c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4C7.4,10.7,6.8,9,7.7,6.8c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C32.6,7.3,25.3,0,16.3,0z" />
+                </symbol>
+            </svg>
+            <main>
+                <div class="content content--fixed">
+
+                    <a class="github" href="https://github.com/codrops/AnimatedFrameSlideshow/"
+                        title="Find this project on GitHub"><svg class="icon icon--github">
+                            <use xlink:href="#icon-github"></use>
+                        </svg></a>
+                    <nav class="demos">
+                        <svg class="icon icon--keyboard">
+                            <use xlink:href="#icon-keyboard"></use>
+                        </svg>
+                        <a class="demo" href="./video/VideoSalonActualUnisex.webm"><span>Video</span></a>
+                        <a class="demo" href="https://www.facebook.com/mjgmwoman/photos?locale=es_ES"><span>Fotos</span></a>
+                        <a class="demo demo--current" href="index3.html"><span>Servicios</span></a>
+                        <a class="demo" href="https://www.facebook.com/mjgmwoman/about?locale=es_ES"><span>Dirección</span></a>
+                        <a class="demo" href="https://www.facebook.com/mjgmwoman?locale=es_ES"><span>Contactos</span></a>
+                       
+                    </nav>
+                    <a href="https://www.facebook.com/mjgmwoman/?locale=es_ES rel=" nofollow" class="pater"
+                        onClick="recordOutboundLink(this, 'Outbound Links', 'SenchaCodrops141117');return false;">
+                        <img class="pater__logo" src="/img/iconoNombre_adobe_express.svg" alt="Sencha Logo" />
+                        <h2 class="pater__title">QUIRES SABER MAS... <br> PINCHAME!!</h2>
+                        <div class="pater__img-wrap"><img class="pater__img" src="/img/iconoImagen (1).jpg"
+                                alt="Sencha Creative" /></div>
+                    </a>
+                </div>
+                <div class="slideshow">
+                    <div class="slides">
+                        <div class="slide slide--current">
+                            <div class="slide__img" style="background-image: url(/img/img1.jpg)"></div>
+                            <h2 class="slide__title">ELLOS</h2>
+                            <p class="slide__desc">Todo tipo de cuidados capilares y faciales para ellos.</p>
+                            <a class="slide__link" href="#">Descubrir más</a>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__img" style="background-image: url(/img/img2.jpg)"></div>
+                            <h2 class="slide__title">Maquillaje</h2>
+                            <p class="slide__desc">Servicio de maquillaje para bodas e eventos.</p>
+                            <a class="slide__link" href="#">Descubrir más</a>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__img" style="background-image: url(/img/img4.jpg)"></div>
+                            <h2 class="slide__title">ELLAS</h2>
+                            <p class="slide__desc">Todo tipo de tratamientos y peinados para vosotras.</p>
+                            <a class="slide__link" href="#">Descubrir más</a>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__img" style="background-image: url(/img/img3.jpg)"></div>
+                            <h2 class="slide__title">PEQUES</h2>
+                            <p class="slide__desc">Servicio de corte para los mas pequenos/as .</p>
+                            <a class="slide__link" href="#">Descubrir más</a>
+                        </div>
+                    </div>
+                    <nav class="slidenav">
+                        <button class="slidenav__item slidenav__item--prev">Previo</button>
+                        <span>/</span>
+                        <button class="slidenav__item slidenav__item--next">Próximo</button>
+                    </nav>
+                </div>
+            </main>
+    </section>
+    <div class="parallax"></div>
+    <!--Seccion de quienes somos-->
+    <section id="my-section">
+        <div class="active" id="wrap-cta">
+            <button id="cta">Pincha, aquí porfabor!</button>
+        </div>
+        <svg viewBox="0 0 215 110" preserveAspectRatio="none">
+            <polygon class="polymorph" points="215,110 0,110 0,0 215,0"></polygon>
+        </svg>
+        <div class="container">
+            <div id="content">
+                <h1>Salon Actual Unisex</h1>
+                <p>En salon actual realizaremos tecnicas de cortey color para potenciar tus rasgos.Rituales capilares.</p>
+                <button id="close">Ok, cierrame</button>
+            </div>
+        </div>
+    </section>
+    <!--PIE DE PAGINA -->
+    <footer id="footer">
+      <h1>Contactos Salon Actual Unisex </h1>
+      <div class="mitadfoter" id="izq">
+        <h3>DIRECCION</h3>
+        <iframe id="mimapa"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.4230900061284!2d-4.606056882556152!3d36.736414400000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72eeffff01eaad%3A0x60989efd98d4d959!2sAv.%20de%20Andaluc%C3%ADa%20%26%20C.%20Toledo%2C%2029580%20Estaci%C3%B3n%20de%20C%C3%A1rtama%2C%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1678306812974!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+      <div class="mitadfoter" id="dcha">
+        <h3>REDES SOCIALES</h3>
+        <ul>
+          <li><a href="https://www.facebook.com/mjgmwoman"><img src="./img/icons8-facebook-rodeado-de-círculo.gif"></img>
+              Fecebook</a></li>
+          <li><a href="https://github.com/hitos-esther"><img  src="./img/icons8-github.gif"></img> GitHub</a></li>
+          <li><a href="https://mail.google.com/"><img src="./img/icons8-mensaje.gif"</img>Email</a></li>
+         
+        </ul>
+      </div>
+      <!-- aquí va un bloque vacio sólo para indicar que acaba el apilamiento a la izquierda -->
+      <div class="limpiar"></div>
+      <div class="author">
+        <p>Authora: Esther Hitos Garcia<br>Copyright 2023 por Línea de Código<br> <a
+            href="https://github.com/estherhitos/DiverHitos.git">ehitgar459@g.educaand.es</a></p>
+      </div>
+    </footer>
+    <div class="limpiar"></div>
+    <script src="/js/anime.min.js"></script>
+    <script src="/js/js.js"></script>
+    <script src="/js/demo.js"></script>
+    <script src="/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/anime.min.js"></script>
+    <script src="/js/demo3.js"></script>
+</body>
+
+</html>

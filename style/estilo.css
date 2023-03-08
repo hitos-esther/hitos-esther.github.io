@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;1,200&family=Rokkitt:wght@600&display=swap');
+@font-face
+			{
+			
+				font-family: 'Nunito Sans', sans-serif;
+        font-family: 'Rokkitt', serif;
+				src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;1,200&family=Rokkitt:wght@600&display=swap') format("opentype");
+								 
+			}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+/***********************************************************/
+/************ BARRA DE NAVEGACION **************************/
+/***********************************************************/
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  letter-spacing: 0.2em;
+  font-family: 'Rokkitt', serif;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(236, 175, 5);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(76, 77, 92);
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+/*para que me aparezca los botones donde a mi me venga bien en la barra de navegación*/
+@media screen and (max-width: 1000px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*********************************************************/
+
+
+
+/***********************************************************/
+/************ HERO SECTION *********************************/
+/***********************************************************/
+
+.absoluto{
+  height: 120%;
+  opacity: 1.5;
+  background-color: rgba(253, 198, 59, 0.148);
+  z-index: 1;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  width: 100%;
+  
+  
+} 
+
+video, source{
+ overflow-x: hidden;
+ width: 100%;
+ 
+}
+
+.seccion{
+background-color: rgb(48, 48, 48);
+}
+
+.limpiar {
+  clear: both;
+  /*deja de apilar cualquier cosa que tenga detras*/
+}
+/***********************************************************/
+/************ SECCION GALERIA  *****************************/
+/***********************************************************/
+
+#my-section {
+  position: relative;
+  background-image: url(/img/img-1.png);
+  background-repeat: no-repeat;
+  background-size:auto;
+  
+  
+}
+
+#wrap-cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0, -50%);
+  opacity: 0;
+}
+#wrap-cta.active {
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  transition: transform 0.6s, opacity 0.6s;
+  opacity: 1;
+}
+#wrap-cta #cta {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  color: #000;
+  background: transparent;
+  border: 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  transition:  0.4s;
+}
+#wrap-cta #cta:hover {
+  background: rgba(115, 91, 65, 0.1);
+}
+
+svg {
+  display: block;
+  width: 100%;
+  height: 100vh;
+}
+svg .polymorph {
+  fill: #cd9f53;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+.container #content {
+  transform: translateY(-50px);
+  opacity: 0;
+  color: #f0ae08;
+  transition: transform 0.6s 0.2s, opacity 0.6s 0.2s;
+}
+.container #content #close {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  color: #f0ae08;
+  background: transparent;
+  border: 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: 0.4s;
+}
+.container #content #close:hover {
+  background: #735b41;
+}
+.container #content.active {
+  z-index: 4;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #ccc;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.final {
+  clear: both;
+  /*deja de apilar cualquier cosa que tenga detras*/
+}
+
+/***********************************************************/
+/************PARALLAX ENTRE SECCIONES***********************/
+/***********************************************************/
+.parallax {
+  /* The image used */
+  background-image: url("../img/iconoImagen\ \(2\)_adobe_express.svg");
+  /* Set a specific height */
+  min-height: 150px;
+  background-color: #291a03;
+  opacity: 0.5;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*****************************************************************/
+/***************************** FOOTER ****************************/
+/*****************************************************************/
+footer {
+  color: white;
+  font-family: 'Rokkitt', serif;
+  /*font famyly general*/
+  border-bottom: 2px solid rgb(236, 202, 105);
+  border-top: 2px solid rgb(236, 202, 105);
+}
+
+footer img {
+
+  max-width: 40px;
+  width: 100%;
+  margin-right: 15px;
+}
+
+footer h3 {
+  font-family: titulo2;
+  text-align: center;
+  color: rgb(236, 202, 105);
+  font-size: 1em;
+  letter-spacing: 2px;
+}
+
+footer ul {
+  padding-left: 0;
+  list-style-type: none;
+  font-family: 'Rokkitt', serif;
+}
+
+footer h1 {
+  font-family: titulos;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+}
+
+footer h3 {
+  text-align: center;
+  font-family: 'Rokkitt', serif;
+  font-size: 22px;
+}
+
+footer ul {
+  margin-left: 20%;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Rokkitt', serif;
+  font-size: 22px;
+}
+
+footer ul li a:hover {
+  color: rgb(236, 202, 105);
+}
+
+footer .mitadfoter {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 5%;
+  float: left;
+}
+
+/** para que cada columna sea la mitad **/
+/* borde y padding incluidos **/
+/** para mostrar como bloque apilable **/
+/** para apilar 2 columnas **que el apilamiento termina **/
+
+footer #izq {
+  border-right: 1px solid black;
+}
+
+footer #mimapa {
+  width: 100%;
+  height: 5%;
+ 
+}
+
+footer #anno {
+  font-family: 'Rokkitt', serif;
+  font-size: 22px;
+}
+
+footer .author {
+  padding-top: 0;
+  text-align: center;
+  color: white;
+  font-family: 'Rokkitt', serif;
+}
+
+.author a:link {
+  color: rgb(236, 202, 105);
+}
+
+/* visited link */
+.author a:visited {
+  color: rgb(236, 202, 105);
+}
+
+/* mouse over link */
+.author a:hover {
+  color: rgb(102, 102, 102);
+}
+
+/* selected link */
+.author a:active {
+  color: rgb(236, 202, 105);
+}
+
+@media only screen and (max-width:1000px) {
+  footer .mitadfoter {
+    width: 100%;
+  }
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 760px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+  
+}
+
+  /*Escritorio*/
+@media (min-width: 1199.98px)  {
+  .absoluto {
+    width: 100%;
+    height: 120%;
+  }
+}
+/*Fin Escritorio*/
+
+/*Tablet*/
+/*Portrait*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+  .absoluto {
+    width: 100%;
+    height: 47%;
+  }
+}
+
+/*landscape*/
+@media (min0-width: 991.98px) and (max-width: 1199.98px)and (orientation:landscape) {
+  .absoluto {
+    width: 100%;
+    height: 35%;
+  }
+}
+/*fin tablet*/
+
+/*movil*/
+/*Portrait*/
+/*Default*/
+@media (max-width: 575.98px)and (orientation:portrait) {
+  .absoluto {
+    width: 100%;
+    height: 45%;
+  }
+/*landscape*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
+  .absoluto {
+    width: 100%;
+    height: 35%;
+  }
+}
+/*fin movil*/
+
+}
